@@ -28,14 +28,14 @@ Poppler (pdf2image kütüphanesinin PDF'leri görsele dönüştürmesi için)
 
 Python Kütüphaneleri: requests, pdf2image, pytesseract
 
-##🪟 Windows
+### 🪟 Windows
 
 Gerekli bağımlılıkları kurar, Python paketlerini yükler ve masaüstüne çalıştırma kolaylığı sağlamak için metnigazete.bat dosyasını atar. En azından öyle umut ediyorum.
 ```Powershell
 winget install -e --id Python.Python.3 --silent --accept-package-agreements --accept-source-agreements; winget install -e --id UB-Mannheim.TesseractOCR --silent --accept-package-agreements --accept-source-agreements; winget install -e --id osgeo.poppler --silent --accept-package-agreements --accept-source-agreements; $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User"); python -m pip install --upgrade pip; python -m pip install requests pdf2image pytesseract; Invoke-WebRequest -Uri "https://raw.githubusercontent.com/rona419/metnigazete/main/metnigazete.py" -OutFile "$PWD\metnigazete.py"; Set-Content -Path "$([Environment]::GetFolderPath('Desktop'))\metnigazete.bat" -Value "@echo off`nchcp 65001 > nul`npython `"$PWD\metnigazete.py`"`npause"
 ```
 
-## 🐧 Linux
+### 🐧 Linux
 
 * Debian / Ubuntu / Pardus / Mint
 ```bash
