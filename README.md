@@ -59,3 +59,7 @@ velitegin@gmail.com
 velitegin@proton.me
 
 **MAİL ADRESLERİME YAZARSANIZ GEMİNİ LİMİTLERİM DAHİLİNDE SEVE SEVE YARDIMCI OLURUM**
+
+## 📜 Lisans
+
+Bu proje GNU General Public License v3.0 (GPL-3.0) altında lisanslanmıştır. Detaylar için LICENSE dosyasına göz atabilirsiniz.
