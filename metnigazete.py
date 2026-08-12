@@ -14,7 +14,7 @@ from concurrent.futures import ProcessPoolExecutor
 from pdf2image import convert_from_bytes, pdfinfo_from_bytes
 import pytesseract
 
-# Windows üzerinde Tesseract varsayılan yol kontrolü
+# Windows üzerinde Tesseract varsayılan yol kontrolü.
 if platform.system() == "Windows" and not shutil.which("tesseract"):
     default_win_path = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
     if os.path.exists(default_win_path):
