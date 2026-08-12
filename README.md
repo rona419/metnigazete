@@ -51,3 +51,11 @@ sudo pacman -S --needed tesseract tesseract-data-tur poppler python python-pip p
 ```bash
 sudo dnf install -y tesseract tesseract-langpack-tur poppler-utils python3 python3-pip python3-requests python3-pdf2image python3-pytesseract && wget -O metnigazete.py "https://raw.githubusercontent.com/rona419/metnigazete/main/metnigazete.py" && (echo -e '#!/bin/bash\npython3 "$(dirname "$0")/metnigazete.py"\nread -p "Çıkmak için ENTER tuşuna basın..."' > ~/Masaustu/metnigazete.sh || echo -e '#!/bin/bash\npython3 "$(dirname "$0")/metnigazete.py"\nread -p "Çıkmak için ENTER tuşuna basın..."' > ~/Desktop/metnigazete.sh) && chmod +x ~/Masaustu/metnigazete.sh ~/Desktop/metnigazete.sh 2>/dev/null
 ```
+
+**VERİLEN KURULUM KOMUTLARININ HİÇBİRİSİ DENENMEMİŞTİR, ÇÜNKÜ NE WİNOWS NE DEBİAN NE ARCH NE DE FEDORA KULLANMAKTAYIM. DISTROBOX VE WİNBOAT İNDİRMEYE DE ÜŞENDİM. AKLINIZDA BULUNSUN.**
+
+velitegin@gmail.com
+
+velitegin@proton.me
+
+**MAİL ADRESLERİME YAZARSANIZ GEMİNİ LİMİTLERİM DAHİLİNDE SEVE SEVE YARDIMCI OLURUM**
