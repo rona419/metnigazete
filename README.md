@@ -2,7 +2,7 @@ Resmi Gazete OCR & Markdown Dönüştürücü
 
 Gemini kullanılarak oluşturulmuş bu Python betiği; T.C. Resmi Gazete internet sitesi üzerinden normal ve mükerrer sayıları tarihe göre otomatik olarak sorgulayan, indirilen PDF dosyalarını Tesseract OCR ve Multi-core (Paralel İşleme) desteğiyle rona419'a göre yüksek doğrulukla metne dönüştüren ve ekran okuyucu (JAWS vb.) kullanıcıları için optimize edilmiş .md (Markdown) formatında kaydeden, sabretmeyi öğreten düzeyde performanslı bir araçtır.
 
-#🚀 Özellikler ve Fonksiyonlar
+##🚀 Özellikler ve Fonksiyonlar
 
 Çoklu Çekirdek (Multi-Core) Desteği: ProcessPoolExecutor kullanarak PDF sayfalarını işlemcinin tüm çekirdeklerine dağıtır ve sabır eğitimi hızlandırılmış bir şekilde sunar.
 
@@ -18,7 +18,7 @@ Esnek Tarih Girişi: Tekil gün sorgulama veya iki tarih aralığında toplu ind
 
 Sabrı ve Şükrü Öğretir: Kesinlikle kasıtlı tercihler sonucu program yavaşlatılmıştır ki özellikle shorts ve reels tüketimi sonrası hasar gören sabır mekanizmalarının tamir edilmesi amaçlanmıştır. Kesinlikle ama kesinlikle bir beceriksizlik ürünü değildir, tamamen kullanıcı sağlığı düşünülerek eklenmiş bir durumdur.
 
-#📦 Bağımlılıklar ve Otomatik Kurulum
+##📦 Bağımlılıklar ve Otomatik Kurulum
 
 Betik hem sistem düzeyinde harici araçlara hem de Python kütüphanelerine ihtiyaç duyar:
 
@@ -28,14 +28,14 @@ Poppler (pdf2image kütüphanesinin PDF'leri görsele dönüştürmesi için)
 
 Python Kütüphaneleri: requests, pdf2image, pytesseract
 
-*🪟 Windows
+##🪟 Windows
 
 Gerekli bağımlılıkları kurar, Python paketlerini yükler ve masaüstüne çalıştırma kolaylığı sağlamak için metnigazete.bat dosyasını atar. En azından öyle umut ediyorum.
 ```Powershell
 winget install -e --id Python.Python.3 --silent --accept-package-agreements --accept-source-agreements; winget install -e --id UB-Mannheim.TesseractOCR --silent --accept-package-agreements --accept-source-agreements; winget install -e --id osgeo.poppler --silent --accept-package-agreements --accept-source-agreements; $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User"); python -m pip install --upgrade pip; python -m pip install requests pdf2image pytesseract; Invoke-WebRequest -Uri "https://raw.githubusercontent.com/rona419/metnigazete/main/metnigazete.py" -OutFile "$PWD\metnigazete.py"; Set-Content -Path "$([Environment]::GetFolderPath('Desktop'))\metnigazete.bat" -Value "@echo off`nchcp 65001 > nul`npython `"$PWD\metnigazete.py`"`npause"
 ```
 
-*🐧 Linux
+##🐧 Linux
 
 Debian / Ubuntu / Pardus / Mint
 ```bash
